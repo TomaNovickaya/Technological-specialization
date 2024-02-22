@@ -19,21 +19,21 @@ public class MyList implements List {
     }
 
     @Override
-    public double averageArray(int[] array) {
+    public double averageArray(int[] arr) {
         double sum = 0;
-        for (int j : array) {
+        for (int j : arr) {
             sum = sum + j;
         }
-        double resAverage = Math.round(sum / array.length);
+        double resAverage = Math.round(sum / arr.length);
         System.out.println("\nСреднее значение списка = " + resAverage + ".\n");
         return resAverage;
     }
 
     public int[] createArray() {
        Random random = new Random();
-       int[] array = random.ints(0, 100).distinct().limit(10).toArray();
-       System.out.println(Arrays.toString(array));
-       return array;
+       int[] arr = random.ints(0, 100).distinct().limit(10).toArray();
+       System.out.println(Arrays.toString(arr));
+       return arr;
     }
 
 }
