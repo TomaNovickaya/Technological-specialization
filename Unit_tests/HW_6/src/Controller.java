@@ -7,8 +7,8 @@ public class Controller {
         this.myList = new MyList();
     }
 
-    public double averageArray(int[] array) {
-        return myList.averageArray(array);
+    public double averageArr(int[] arr) {
+        return myList.averageArray(arr);
     }
 
     public void compareArray(double resAverage1, double resAverage2){
