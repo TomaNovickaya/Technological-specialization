@@ -61,6 +61,7 @@ public class MontyHallParadox {
     }
 
     private static void trial(int numRound) {
+        //что за doorsNumber? они нигде не определены, код не компилируется
         int success = random.nextInt(doorsNumber);
         int firstChoice = random.nextInt(doorsNumber);
         int freeOpenDoor = -1;
